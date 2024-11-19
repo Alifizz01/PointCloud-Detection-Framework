@@ -1,1 +1,7 @@
+numpy
+matplotlib
+open3d
+rosbag
+sensor-msgs
+pykitti
 
