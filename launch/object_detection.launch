@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="rosbag" type="play" name="rosbag_player" args="rosbag_files/sample.bag" />
+    <node pkg="lidar_processing" type="extract_lidar_ros.py" name="extract_lidar" />
+    <node pkg="lidar_processing" type="use_iln_ros.py" name="process_lidar" />
+    <node pkg="lidar_processing" type="object_detection_ros.py" name="object_detection" />
+</launch>
