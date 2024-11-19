@@ -12,5 +12,5 @@ This project provides a pipeline for object detection using LiDAR point cloud da
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/PointCloud-Detection-Framework.git
+   git clone https://github.com/Alifizz01/PointCloud-Detection-Framework.git
    cd PointCloud-Detection-Framework
