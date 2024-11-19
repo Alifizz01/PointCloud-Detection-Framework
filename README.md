@@ -14,6 +14,33 @@ This project provides a pipeline for object detection using LiDAR point cloud da
    ```bash
    git clone https://github.com/Alifizz01/PointCloud-Detection-Framework.git
    cd PointCloud-Detection-Framework
+### **5. Add a Sample Rosbag File (Optional)**
+If possible, include or link a small example rosbag file in the `rosbag_files/` folder to demonstrate the full pipeline.
+
+---
+
+### **6. Automate the Workflow**
+Create a script to automate the entire pipeline (from rosbag extraction to visualization).
+
+#### Script: `run_pipeline.py`
+1. Create a new file named `run_pipeline.py`.
+2. Add the following content:
+   ```python
+   import os
+
+   def run_pipeline():
+       # Step 1: Extract LiDAR from rosbag
+       os.system("python lidar_processing/extract_lidar.py")
+
+       # Step 2: Use ILN Model
+       os.system("python lidar_processing/use_iln_model.py")
+
+       # Step 3: Visualize Dense Point Cloud
+       os.system("python lidar_processing/visualize_dense_pointcloud.py")
+
+   if __name__ == "__main__":
+       run_pipeline()
+
 
 
 ## Pre-Trained Models
